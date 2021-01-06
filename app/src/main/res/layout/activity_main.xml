@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backplate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ResizeDay"
+        android:layout_width="213dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/resizevaluetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ResolutionFrom"
+        android:layout_width="213dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="Из какого разрешения >="
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResizeDay" />
+
+    <TextView
+        android:id="@+id/ResolutionTo"
+        android:layout_width="203dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="128dp"
+        android:text="В какое разрешение"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResolutionFrom" />
+
+    <Button
+        android:id="@+id/ResizeMouth"
+        android:layout_width="204dp"
+        android:layout_height="59dp"
+        android:text="@string/resizetimeMouth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResizeDay"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="375dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResizeMouth" />
+
+    <SeekBar
+        android:id="@+id/fromslider"
+        android:layout_width="363dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/ResolutionTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResolutionFrom"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <SeekBar
+        android:id="@+id/toslider"
+        android:layout_width="363dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/ResizeMouth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResolutionTo"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <TextView
+        android:id="@+id/fromslidertext"
+        android:layout_width="63dp"
+        android:layout_height="26dp"
+        android:text="0mp"
+        app:layout_constraintBottom_toTopOf="@+id/fromslider"
+        app:layout_constraintEnd_toEndOf="@+id/fromslider"
+        app:layout_constraintStart_toStartOf="@+id/fromslider"
+        app:layout_constraintTop_toBottomOf="@+id/ResolutionFrom"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/toslidertext"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:text="0mp"
+        app:layout_constraintBottom_toTopOf="@+id/toslider"
+        app:layout_constraintEnd_toEndOf="@+id/toslider"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/toslider"
+        app:layout_constraintTop_toBottomOf="@+id/ResolutionTo"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

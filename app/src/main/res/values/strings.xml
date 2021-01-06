@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhotoResizer</string>
+    <string name="resizevaluetext">Ресайзнуть сегодняшние</string>
+    <string name="resizetimeMouth">ресайзнуть за месяц</string>
+</resources>
